@@ -37,5 +37,22 @@ myHouse::MyHouse() {
     total = 0;
 }
 
+//p94 04
+#include <iostream>
 
- 
+namespace Book {
+	namespace Title 
+	{	
+		char * title;
+	}
+}
+
+char * title;
+
+int main()
+{
+	title = "CANDY";
+	title = "COOKIE";
+	std::cout<< title << "와" << title << std::endl;
+	return 0;
+}
