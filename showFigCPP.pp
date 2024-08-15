@@ -56,3 +56,37 @@ int main()
 	std::cout<< title << "와" << title << std::endl;
 	return 0;
 }
+//p40
+in main()
+{
+	OrangeBox myOrangeBox;
+
+	myOrangeBox.Empty()
+	myOrangeBox.Add(5);
+
+	return 0;
+}
+
+class orangebox{
+
+private:
+	int total = 0;
+};
+
+//p41
+class OrangeBox {
+public:
+	OrangeBox();
+
+};
+
+OrangeBox::OrangeBox()
+{
+	tatal = 0;
+}
+
+int main()
+{
+	OrangeBox myOragneBox
+}
+
