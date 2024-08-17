@@ -111,3 +111,39 @@ int main()
 	return 0;
 }
 
+//p45
+void OrangeBox::Add(int addOrange)
+{
+	total += addOrange;
+	if(total > 100) total = 100;
+}
+
+//p46
+OrangeBox myOrangeBox;
+myOrangeBox.total = 10;
+
+myOrangeBox.total = 30;
+
+myOrangeBox.total = 50;
+
+//p47
+void OrangeBox::Add(int addOrange)
+{
+	total += addOrange;
+}
+
+void OrangeBox::Del(int delOrange)
+{
+	total -= delOrange;
+}
+
+void OrangeBox::Add(int addOrange)
+{
+	total += addOragne * 50;
+}
+
+void OrangeBox::Del(int delOrange)
+{
+	total -= delOragne * 50;
+}
+
