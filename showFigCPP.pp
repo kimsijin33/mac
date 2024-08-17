@@ -90,3 +90,24 @@ int main()
 	OrangeBox myOragneBox
 }
 
+//p42
+class OrangeBox {
+public:
+	OrangeBox();
+	~OrangeBox();
+};
+
+OrangeBox::~OrangeBox()
+{
+	printf("오렌지 상자 오브젝트 임무 완료\n");
+}
+
+int main()
+{
+	OrangeBox myOrangeBox;
+
+	myOrangeBox.Add(5);
+	printf("상자 속의 오렌지 : %d개\n",myOrangeBox.GetTotal());
+	return 0;
+}
+
