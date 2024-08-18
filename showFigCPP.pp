@@ -147,3 +147,6 @@ void OrangeBox::Del(int delOrange)
 	total -= delOragne * 50;
 }
 
+//p97
+#define MAX(a, b) { (a) > (b) ? (a) : (b) }
+
