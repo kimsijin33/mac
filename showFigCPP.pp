@@ -150,3 +150,16 @@ void OrangeBox::Del(int delOrange)
 //p97
 #define MAX(a, b) { (a) > (b) ? (a) : (b) }
 
+inline int MaxFunc(int a, int b) {
+	if( a > b ) return a;
+	return b;
+}
+
+int x1 = 10, y1 = 15;
+int n1 = MAX(x1++, y1++);
+cout << "x1 = " << x1 << "y1 = " << y1 << endl;
+
+int x2 = 10, y2 = 15;
+int n2 = MaxFunc(x2++, y2++);
+cout << "x2 - " << x2 << "y2 = " << y2 << endl;
+
