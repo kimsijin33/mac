@@ -163,3 +163,37 @@ int x2 = 10, y2 = 15;
 int n2 = MaxFunc(x2++, y2++);
 cout << "x2 - " << x2 << "y2 = " << y2 << endl;
 
+//p102
+int num;
+int &newnum = num;
+
+//2
+newnum = 13;
+cout << "num = " << num << endl;
+cout << "newnum = " << newnum << endl;
+
+//3
+int num;
+int *newnum = &num;
+
+*newnum = 400;
+
+//p103
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int num = 0;
+	int &newnum = num;
+
+	num = 200;
+	cout << "num = " << num << endl;
+	cout << "newnum = " << newnum << endl;
+	
+	newnum = 400;
+	cout << "num = " << num << endl;
+	cout << "newnum = " << newnum << endl;
+	return 0;
+}
+
