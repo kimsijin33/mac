@@ -197,3 +197,12 @@ int main()
 	return 0;
 }
 
+//p104
+double Addnum(double &a, double &b)
+{
+    return a + b;
+}
+
+double num1 = 10.5, num2 = 20.5;
+double ans = Addnum(num1, num2);
+
