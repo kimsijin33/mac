@@ -206,3 +206,21 @@ double Addnum(double &a, double &b)
 double num1 = 10.5, num2 = 20.5;
 double ans = Addnum(num1, num2);
 
+//p105
+#include <iostream>
+using namespace std;
+
+void Changevalue (double &a)
+{
+	a = 200;
+}
+
+int main()
+{
+	double num1 = 100;
+	cout << "num1 " << num1 << endl;
+	Changevalue(num1);
+	cout << "num1 = " << num1 << endl;
+	return 0;
+}
+
