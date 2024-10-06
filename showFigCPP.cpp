@@ -224,3 +224,22 @@ int main()
 	return 0;
 }
 
+//p106
+void Keepvalue(const double &a);
+
+#include <iostream>
+using namespace std;
+
+void Keepvalue(const double &a)
+{
+	a = 200;
+}
+
+int main()
+{
+	double num1 = 100;
+	Keepvalue(num1);
+	return 0;
+}
+
+
