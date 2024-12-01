@@ -242,4 +242,50 @@ int main()
 	return 0;
 }
 
+//p107
+#include <iostream>
+using namespace std;
+
+struct Person {
+	char name[50];
+	int age;
+};
+
+void PrintPersonRef(const Person &psn)
+{
+	cout << psn.name << "씨" << psn.age << "세" << endl;
+}
+
+void PrintPersonPtr(const Person *psn)
+{
+	cout << psn->name << "씨 " << psn->age << "세 " << endl;
+}
+
+int main()
+{
+	Person shain1 = { "Juhyun", 18};
+
+	PrintPersonRef(shain1);
+	PrintPersonPtr(&shain1);
+	return 0;
+}
+
+//p108
+struct Person {
+	char name[50]
+	int age;
+};
+
+void PrintPersonRef(Person *psn);
+void PrintPersonPtr(Person &psn);
+void PrintPersonVal(Person psn);
+
+int main()
+{
+
+	PrintPersonRef(shain1);
+	PrintPersonPtr(&shain1);
+	PrintPersonVal(shain1);
+
+
 
