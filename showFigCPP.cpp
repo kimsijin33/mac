@@ -406,3 +406,35 @@ int main()
 	cout <<"a : " << a << " b : " << b << " c : " << c << endl;
 }
 
+//문제 03
+#include <iostream>
+using namespace std;
+
+class swap1Class {
+	void swap1(int x, int y)
+	{
+		int c = x;
+		x = y;
+		y = c;
+	}
+}
+
+class swap2Class {
+	void swap2(int a int b)
+	{
+		a = 100;
+		b = 50;
+	}
+}
+
+int main()
+{
+	int x = 50, int y = 100;
+	swap1Class swap1;
+	swap1.swap1(x, y);
+	cout << "swap1 : x = " << x << " y = " << y << endl;
+
+	swap2Class swap2;
+	swap2.swap2(x, y);
+	cout << "swap2 : x = " << x << " y = " << y << endl;
+}
